@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/stylesheets/contact.css">
+<script type="text/javascript" src="/javascript/contact/contact.js"></script>
+<a href="http://www.html2pdf.it/?url=https%3A%2F%2Fyori-cv-123.herokuapp.com%2Fpdf&download=false&format=A4&downloadToken=1467977546688&orientation=portrait&margin=1cm"><i class="material-icons download-pdf">picture_as_pdf</a></i>
+<div>
+	<div class="container contact-container offset">
+		
+		<div class="content-wrapper">
+			
+			<div class="col s8 color-white contact-form contactMailHolder">
+				<span class="not-available">N.A</span>
+				<div>
+					<h2 class="contact-titel">Contact me</h2>
+				</div>
+				<table>
+		          <tr>
+		            <td>E-mail</td>
+		            <td>yori_vanloo@live.nl</td>
+		          </tr>
+		          <tr>
+		            <td>Phone</td>
+		            <td>+31644663098</td>
+		          </tr>
+		        </table>
+		        <div class="input-field col s6">
+		          	<input  id="first_name" type="text" class="validate">
+		          	<label for="first_name">Voornaam*</label>
+		        </div>
+		        <div class="input-field col s6">
+		          	<input m" id="last_name" type="text" class="validate" contactID="achternaam" errorMessage="Vul een geldige achternaam in">
+		          	<label for="last_name">Achternaam*</label>
+		        </div>
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">email</i>
+		          	<input  id="email" type="email" class="validate" contactID="email" errorMessage="Vul een geldige email in">
+		          	<label for="email">Email</label>
+		        </div>
+		        <div class="input-field col s12">
+		        	<i class="material-icons prefix">mode_edit</i>
+		          	<textarea  id="text" type="text" minlength='10' contactID="bericht" class="materialize-textarea validate" errorMessage="Vul een geldig bericht in (minimaal 10 tekens)"></textarea>
+		          	<label for="text">Vraag</label>
+		        </div>
+		        <div class="col s12">
+		        	<a class="waves-effect waves-light btn blue form-btn" onclick="sendMail();" href="mailto:yori_vanloo@live.nl" id="GlobalSendButton">verstuur</a>
+		        </div>
+		        <div class="progress sendProgressBar" style='display:none;'>
+ 				    <div class="indeterminate"></div>
+ 				</div>
+	    	</div>
+		</div>
+	</div>	
+</div>
+<script>
+	
+</script>

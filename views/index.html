@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Style sheets -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/materialize.css"/>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,400,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>CV</title>
+  <script type="text/javascript" src="/javascripts/jquery/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/materialize/materialize.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+  <script type="text/javascript" src="/javascripts/data.js"></script>
+</head>
+<body>
+  <div class="container content-cv">
+      <div class="top-bar row">
+        <div class="col m2 red"></div>
+        <div class="col m2 blue"></div>
+        <div class="col m2 orange"></div>
+        <div class="col m2 l-blue"></div>
+        <div class="col m2 brown"></div>
+      </div>
+     <div class="navbar">
+        <span><i class="material-icons side-menu">menu</i></span>
+        <ul id="myNav" class="left">
+          <i class="material-icons close-menu">close</i>
+          <li id="about-me" onclick="navigatTo('about_me','Over mij')"><span class="li-border">About me</span></li>
+          <li id="skills" onclick="navigatTo('skills','Skills')"><span class="li-border">Skills</span></li>
+          <li id="experience" onclick="navigatTo('experience','Experience')"><span class="li-border">Experience</span></li>
+          <li id="education"onclick="navigatTo('education','Education')"><span class="li-border">Education</span></li>
+          <li id="contact"onclick="navigatTo('contact','Contact')"><span class="li-border">Contact</span></li>
+        </ul>
+      </div>
+    
+    <div id="content">
+
+    </div>
+  </div>
+    </div>
+
+</body>
+</html>
+<script>
+  $(function(){
+    init();
+  });
+</script>
